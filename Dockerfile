@@ -2,7 +2,7 @@ FROM python:slim
 
 VOLUME /openstack.rc
 
-ADD entrypoint.sh .
+ADD entrypoint.sh entrypoint.sh
 
 RUN apt-get update  \
     && pip install python-swiftclient
